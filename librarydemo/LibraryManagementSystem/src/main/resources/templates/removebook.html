@@ -1,0 +1,81 @@
+<html
+	<head>
+		<title>
+			Remove a book in library
+		</title>
+	</head>
+	
+	<style>
+	ul{
+	padding :30px,10px;
+	width:1300px;
+	height:70px;
+	margin:auto;
+	background-color:rgb(128, 255, 0);
+	border:1px solid rgb(255, 0, 0);
+}
+ul li{	
+	display:inline-block;
+	list-style-type:none;
+	color:#fff;
+	padding:45px;
+	
+}
+	body{
+		background-color:gainsboro;
+	}
+	input{
+		display:block;
+		width:150%;
+		height:20%;
+		padding:2%;
+		border-radius:2%;
+		border-color:blue;
+	}
+	.takebook{
+		align-items:center;		
+		justify-content:center;
+		display:flex;		
+		padding-bottom: 80;
+		padding-top:120;
+		padding-right:160;
+	}
+	</style>
+<body>
+
+		<h3> Admin Id:<td th:text="${adminid}"></td></h3>
+	<div>
+		<ul>
+		<li> <button type="button" onclick="location.href='home'"> Home</button>  </li>	
+		<li> <button type="button" onclick="location.href='userdetails'">Users</button>  </li>
+		<li> <button type="button" onclick="location.href=''">About us</button> </li>
+		<li> <button type="button" onclick="location.href=''">Help</button> </li>
+		<li> <button type="button" onclick="location.href=''">Settings</button> </li>
+		<li> <button type="button" onclick="location.href='adminlogin'">Logout</button> </li>	
+		</ul>
+	</div>	
+		
+		<h2>Enter the Serial Number to Remove a Book in Library</h2>
+		<p><sup>*</sup>Note: You can Remove only 3 books</p>
+		
+		<div class="takebook">
+		<form action="remove-book" method="post">
+		
+		<div class="remove-book">
+		Enter the Book Serial Number	
+		<input placeholder="Book Serial Num :1" type="text"   name="sn1">
+		<br><br>
+		Enter the Book Serial Number	
+		<input placeholder="Book Serial Num :2" type="text" name="sn2" >
+		<br><br>
+		Enter the Book Serial Number	
+		<input placeholder="Book Serial Num :3" type="text" name="sn3">
+		<br><br>
+		
+		<input type="submit">
+		
+		</div>
+		
+</body>
+	
+</html>

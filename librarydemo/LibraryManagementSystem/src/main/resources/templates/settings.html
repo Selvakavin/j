@@ -1,0 +1,64 @@
+<html>
+
+<style>
+
+ul{
+	padding :30px,10px;
+	width:1300px;
+	height:70px;
+	margin:auto;
+	background-color:rgb(128, 255, 0);
+	border:1px solid rgb(255, 0, 0);
+}
+ul li{	
+	display:inline-block;
+	list-style-type:none;
+	color:#fff;
+	padding:45px;		
+}
+
+body{
+	background-color:rgb(255, 187, 221);
+}
+
+.nameedit{
+		align-items:flex-end;
+		justify-content:right;
+		display:flex;
+		padding:0% 10% 0%;
+		font-size:medium;
+}
+
+</style>
+	<head>
+		<title>
+			Settings
+		</title>				 
+	</head>
+	<h2>Account Information</h2>
+<body>
+
+<h3> Student Id:<td th:text="${userid}"></td></h3>
+	<div>
+		<ul>
+		<li> <button type="button" onclick="location.href='home'"> Home</button>  </li>
+		<li> <button type="button" onclick="location.href='about-us'">About us</button> </li>
+		<li> <button type="button" onclick="location.href='help'">Help</button> </li>
+		<li> <button type="button" onclick="location.href='start'">Logout</button> </li>
+		</ul>
+	</div>	
+
+	<div>
+		
+		<br>
+		 Name: <td th:text="${books.name}"></td>
+		 <a class="nameedit" href="">Edit</a>
+		 <hr>
+		 Email:<td th:text="${books.email}"></td>
+		  <a class="nameedit" href="">Edit</a>
+		 <hr>
+		 Change Password:<a href="">Change Password</a>
+					
+	</div>
+</body>	
+</html>

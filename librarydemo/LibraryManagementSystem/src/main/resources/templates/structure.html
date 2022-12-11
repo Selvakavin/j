@@ -1,0 +1,89 @@
+<html>
+
+<style>
+
+ul{
+	padding :30px,10px;
+	width:1300px;
+	height:70px;
+	margin:auto;
+	background-color:rgb(128, 255, 0);
+	border:1px solid rgb(255, 0, 0);
+}
+ul li{	
+	display:inline-block;
+	list-style-type:none;
+	color:#fff;
+	padding:45px;
+	
+}
+tr table,th,td{
+	border:0.2px solid rgb(0, 0, 255);
+	border-collapse:collapse;
+	width:250px;
+	color:rgb(0, 0, 0);
+}
+th{
+	background:rgb(128, 255, 128);	
+	color:rgb(0, 128, 192);
+}
+h2{
+	align-items:center;
+	justify-content:center;
+	display:flex;
+}
+body{
+	background-color:aquamarine;
+
+}
+
+</style>
+
+	<head>
+		<title>
+			LibraryManagementSystem
+		</title>	
+	</head>
+<body>
+	<h2>
+		Available Books in Library<br>
+	</h2>
+	<h3> Student Id:<td th:text="${userid}"></td></h3>
+	<div>
+		<ul>
+		<li> <button type="button" onclick="location.href='home'"> Home</button>  </li>		
+		<li> <button type="button" onclick="location.href='Buy'">Take Book </button> </li>
+		<li> <button type="button" onclick="location.href='Return'">Return</button> </li>
+		<li> <button type="button" onclick="location.href='history'">History</button>  </li>
+		<li> <button type="button" onclick="location.href='about-us'">About us</button> </li>
+		<li> <button type="button" onclick="location.href='help'">Help</button> </li>
+		<li> <button type="button" onclick="location.href='settings'">Settings</button> </li>
+		<li> <button type="button" onclick="location.href='start'">Logout</button> </li>		
+		</ul>
+	</div>	
+	<br>
+	<br><br>
+	<div>
+	<table>
+		<tr>
+		<th>Book Serial Number</th>
+		<th>Book Name</th>
+		<th>Edition</th>
+		<th>Author</th>
+		<th>Stock</th>
+		</tr>
+		 <tr th:each="book : ${books}"> 
+      <td th:text="${book.SerialNum}"></td>
+      <td th:text="${book.BookName}"></td>
+      <td th:text="${book.Edition}"></td>
+      <td th:text="${book.Author}"></td> 
+      <td th:text="${book.stock}"></td>
+    </tr>
+	</table>
+		
+	</div>	
+	
+</body>
+	
+		
+</html>
