@@ -80,7 +80,7 @@ inputcolor.addEventListener('click',(e)=>{
         document.querySelector('.resume-download').style.backgroundColor=inputcolor.value;
         document.querySelector('.portfolio').style.color=inputcolor.value;        
         const progressBar=document.querySelectorAll('.progressBar');
-        progressBar.forEach(ele=>{
+        [...progressBar].forEach(ele=>{
             ele.style.backgroundColor=inputcolor.value;
         });
     });
