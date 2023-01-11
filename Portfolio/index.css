@@ -1,0 +1,275 @@
+body{
+    user-select: none;
+}
+.main{
+    display: flex;
+}
+.tone{
+    display: flex;
+}
+.controlcolor{
+    display: none;
+}
+#blue,#red,#violet,#green,#pink,#orange{
+    margin-left: 2px;
+    margin-top: 25px;
+    width: 27px;
+    height: 23px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#blue{
+    background-color: blue;
+}
+#red{
+    background-color: red;
+}
+#violet{
+    background-color: rgb(32, 138, 199);
+}
+#green{
+    background-color: rgb(113, 131, 204);
+}
+#pink{
+    background-color: rgb(49, 194, 73);
+}
+#orange{
+    background-color: rgb(218, 52, 168);
+}
+#close{
+    margin-left: 5px;
+    margin-top: 15px;
+    width: 30px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: rgb(105, 81, 196);
+    background-color: beige;
+    cursor: pointer;
+}
+.color{
+    margin-top: 3px;
+    margin-left: 1px;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+}
+.navigation{
+    background-color: rgba(24, 23, 23, 0.938);
+    max-width: 300px;
+    max-height: 800px;
+    border-radius: 10px;
+}
+li{
+    list-style: none;
+}
+#navs{
+    margin-top: 50px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    margin-right: 35px;
+    background-color: rgb(106, 97, 116);
+}
+.innernavigation
+{
+    background-color: rgb(59, 59, 59);
+    margin-bottom: 30px;
+    margin-top: 20px;
+    max-width: 130px;
+    margin-left: 70px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+    opacity: 1.9;
+    margin-right: 90px;
+}
+#navs:hover{
+    background-color: rgb(125, 211, 214);
+    transform: scale3d(1.2,1.2,1.2);
+}
+.fa-home,.fa-user,.fa-envelope,.fa-book{
+    color: white;
+}
+
+.home{
+    margin-top: 150px;
+    margin-left: 50px;
+    display: none;
+}
+.name{
+    font-size: 27px;
+}
+.display{
+    background-color:rgba(24, 23, 23, 0.938);
+    margin-left: 1px;
+    border-radius: 10px;
+    max-width: 1000px;
+    color: rgb(168, 168, 121);
+}
+.homeimg{
+    max-width: 200px;
+    margin-top: 50px;
+    margin-left: 650px;
+    border-radius: 10px;
+    margin-right: 200px;
+}
+.blink{
+    animation: animate .5s linear infinite;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 0.7;
+      }
+      100%{
+        opacity: 0;
+      }
+}
+span{
+    color: rgb(52, 34, 218);
+}
+.moreaboutme{
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.maboutme{
+    font-size: 19px;
+    font-weight: bold;
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(187, 163, 132);
+}
+.maboutme:hover{
+    background-color: cornflowerblue;
+}
+.titaboutme{
+    margin-left: 120px;
+    margin-top: 100px;
+    margin-right: 700px;
+}
+#titaboutmehead{
+    font-size: 27px;
+    font-weight: bold;
+    color: rgb(189, 125, 125);
+}
+
+.details{
+    margin-left: 235px;
+    margin-top: 70px;
+    margin-right: 350px;
+}
+
+#myname,#myemail,#myage,#myqualification,#myphone{
+    margin-top: 30px;
+    color: rgb(218, 188, 143);
+}
+
+.aboutme{
+    display: none;
+}
+
+.skilltit{
+    margin-left: 350px;
+    margin-right: 400px;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.skill{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.outerProgressBar{
+    background-color: rgba(94, 84, 84, 0.219);
+    width: 250px;
+    height: 10px;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-right: 1000px;
+}
+
+.innerProgressBar{
+    background-color: rgb(59, 49, 199);
+    color: green;
+    height: 10px;
+    border-top-left-radius: 5px;
+}
+.skills{
+    display: none;
+}
+.contit{
+    margin-left: 380px;
+    margin-right: 480px;
+    margin-top: 100px;
+}
+
+#tittextcon{
+    font-size: 27px;
+    color: rgb(180, 131, 131);
+    font-weight: bold;
+}
+.gmail{
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.gmailbox,.instabox,.whatsappmsg{
+    margin-top: .7px;
+    margin-left: 40px;
+    background-color: wheat;    
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(72, 78, 73);
+    max-width: 290px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(61, 61, 53);
+    display: none;
+}
+#mailid,#instaid,#watsappnum{
+    margin-top: 2.6px;
+    margin-left: 6px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.mailicon,.instaicon,.whatsappicon{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(26, 14, 185);
+    cursor: pointer;
+}
+.fa-google,.fa-instagram,.fa-whatsapp{
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+.instagram{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.whatsapp{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.contact{
+    display: none;
+}
+
+#maillink,#insid,#watsid{
+    text-decoration: none;
+    color: rgb(2, 7, 7);
+    font-weight: bold;
+}

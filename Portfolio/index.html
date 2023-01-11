@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selvakavin S</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navigation">
+            <div class="tone">
+                <button class="color" onclick="changeColorOptions()"><i class="fa fa-pencil"></i></button>
+                <div class="controlcolor">
+                    <button id="blue" onclick="changeColor('blue')"></button>
+                    <button id="red" onclick="changeColor('red')"></button>
+                    <button id="violet" onclick="changeColor('rgb(32, 138, 199)')"></button>
+                    <button id="pink" onclick="changeColor('rgb(49, 194, 73)')"></button>
+                    <button id="green" onclick="changeColor('rgb(113, 131, 204)')"></button>
+                    <button id="orange" onclick="changeColor('rgb(218, 52, 168)')"></button>
+                    <button id="close" onclick="closeColorOptions()"><</button>
+                </div>
+            </div>
+            <div class="innernavigation">
+                <li onclick="homeActive()"><button id="navs"><i class="fa fa-home"></i></button></li>
+                <li onclick="userActive()"><button id="navs"><i class="fa fa-user"></i></button></li>
+                <li onclick="bookActive()"><button id="navs"><i class="fa fa-book"></i></button></li>
+                <li onclick="contactActive()"><button id="navs"><i class="fa fa-envelope"></i></button></li>
+            </div>
+            .
+        </div>
+        <div class="display">
+
+            <!--Home page-->
+            <div class="home">
+                <h4 class="name">Hello..! This is  <span>Selvakavin</span>,
+                    <br>
+                    I am a <span>F</span>ull <span>S</span>tack <span>D</span>evelope<span>r</span><span class="blink">|</span>
+                        </h4>
+                <div class="moreaboutme" onclick="userActive()">
+                    <button class="maboutme">More about me</button>
+                </div>
+                <div class="image">
+                    <img src="images/picture.png" alt="sk" srcset="" class="homeimg"> 
+                </div>
+            </div>
+
+            <!--About me page-->
+            <div class="aboutme">
+                <div class="titaboutme">
+                    <h3 id="titaboutmehead">Abo<span>u</span>t <span>me</span></h3>
+                </div>
+                <div class="details">
+                    <h3 id="myname">Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp<span>Selvakavin S</span></h3>
+                    <h3 id="myemail">Email &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp<span>kavinsellamuthu004@gmail.com</span></h3>
+                    <h3 id="myphone">Mobile &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <span>+91 9360148930</span></h3>
+                    <h3 id="myqualification">Qualification &nbsp&nbsp&nbsp:&nbsp<span>B.E</span></h3>
+                    <h3 id="myage">Age &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp<span>21</span></h3>
+                </div>
+            </div>
+
+            <!--Skills-->
+            <div class="skills">
+
+                <div class="skilltit">
+                    <h3 id="skilltittext"><span>W</span>hat can <span>i</span> do<span>?</span></h3>
+                </div>
+
+                <div class="skill">
+                    <h4>HTML5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 70%</h4>
+                    <div class="outerProgressBar">
+                        <div class="innerProgressBar" style="width: 70%;">.</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>CSS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 65%</h4>
+                    <div class="outerProgressBar">
+                        <div class="innerProgressBar" style="width: 65%;">.</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Javascript &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 60%</h4>
+                    <div class="outerProgressBar">
+                        <div class="innerProgressBar" style="width: 60%;">.</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Core Java &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 80%</h4>
+                    <div class="outerProgressBar">
+                        <div class="innerProgressBar" style="width: 80%;">.</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>MySQL &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 70%</h4>
+                    <div class="outerProgressBar">
+                        <div class="innerProgressBar" style="width: 70%;">.</div>
+                    </div>
+                </div>
+            </div>
+
+             <!--Contact-->
+             <div class="contact">
+                <div class="contit">
+                    <h3 id="tittextcon"><span>C</span>ontact <span>Me</span></h3>
+                </div>
+
+                <div class="contacticons">
+
+                    <div class="gmail">
+                        <div class="mailicon" onmouseover="contactIcons('gmailbox')" onmouseleave="removeIconsExplanation('gmailbox')">
+                            <a id="maillink" href="mailto:kavinsellamuthu004@gmail.com"><i class="fa fa-google"></i></a>
+                        </div>
+                        <div class="gmailbox">
+                            <h4 id="mailid">kavinsellamuthu004@gmail.com</h4>
+                        </div>
+                    </div>
+
+                    <div class="instagram">
+                        <div class="instaicon" onclick="openInstagram()" onmouseover="contactIcons('instabox')" onmouseleave="removeIconsExplanation('instabox')">
+                           <a id="insid"> <i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="instabox">
+                            <h4 id="instaid">Kavin_sk_172</h4>
+                        </div>
+                    </div>
+
+                    <div class="whatsapp">
+                        <div class="whatsappicon" onclick="openwhatsapp()" onmouseover="contactIcons('whatsappmsg')" onmouseleave="removeIconsExplanation('whatsappmsg')">
+                           <a id="watsid"> <i class="fa fa-whatsapp"></i></a>
+                        </div>
+                        <div class="whatsappmsg">
+                            <h4 id="watsappnum">9360148930</h4>
+                        </div>
+                    </div>
+                
+                </div>
+
+             </div>
+
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
