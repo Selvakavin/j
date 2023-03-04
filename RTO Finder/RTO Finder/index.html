@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTO Finder</title>  
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/22987bb49a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="main">
+        <h2 class="header">RTO Finder</h2>
+    <div class="search">        
+        <input class="inp" placeholder="Enter vehicle number" style="text-transform: uppercase" maxlength="5"> 
+        <h4 class="find"><i class="fa-solid fa-magnifying-glass"></i></h4>               
+    </div>
+    <div class="display">
+      <h3 class="query"></h3>
+      <button type="button" class="btn-clear">Clear</button>
+        <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Location</th>
+                <th scope="col">Type</th>
+                <th scope="col">District</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" id="code"></th>
+                <td id="location"></td>
+                <td id="type"></td>
+                <td id="dist"></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    </div>
+</body>
+<script src="asserts/js/main.js"></script>
+<script src="asserts/js/index.js"></script>
+</html>
