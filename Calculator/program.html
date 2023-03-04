@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href="program.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h2>Calculator</h2>
+        <input id="id" placeholder="0"><br>
+    <div class="tbl">
+        <table>
+            <tr>
+                <button class="btn btn-light" onclick="run(1)">1</button>
+                <button class="btn btn-light" onclick="run(2)">2</button>
+                <button class="btn btn-light" onclick="run(3)">3</button>
+                <button class="btn btn-light" onclick="run('+')">+</button> 
+                <button class="btn btn-light" onclick="run('*')">*</button>                  
+            </tr>
+            <br>
+            <tr>
+                <button class="btn btn-light" onclick="run(4)">4</button>
+                <button class="btn btn-light" onclick="run(5)">5</button>
+                <button class="btn btn-light" onclick="run(6)">6</button>
+                <button class="btn btn-light" onclick="run('-')">-</button>
+                <button class="btn btn-light" onclick="run('/')">/</button>             
+            </tr>
+            <br>
+            <tr>
+                <button class="btn btn-light" onclick="run(8)">8</button>  
+                <button class="btn btn-light" onclick="run(9)">9</button>   
+                <button class="btn btn-light" onclick="run(0)">0</button> 
+                <button class="btn btn-light" onclick="run('=')">=</button>    
+                <button class="btn btn-light" onclick="run('Ac')">Ac</button>              
+            </tr>
+        </table>
+
+    </div>
+    </body>
+    <script src="program.js"></script>
+</html>

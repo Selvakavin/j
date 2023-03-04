@@ -1,0 +1,32 @@
+h2{
+    color:rgba(34, 34, 226, 0.863);
+    position: absolute; 
+    left: 10%;
+}
+
+#id{
+    position:absolute;
+    width:250px;
+    height:30px;
+    top: 35%;
+    left:36%;
+    color:black;
+    font-size:15px;
+    border-color: rgb(6, 2, 226);
+    border-radius: 8px;
+}
+
+.tbl{
+    color:blue;
+    position:absolute;
+    top: 39%;
+    left:35.8%;
+}
+.btn-light{
+    margin-top: 8px;
+    margin-left: 2px;
+    width: 50px;
+    height:50px;
+    font-size: 26px;
+    background-color: rgb(139, 179, 165);
+}
