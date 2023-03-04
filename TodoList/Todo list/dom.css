@@ -1,0 +1,205 @@
+.header{
+    background-color: blue;
+    height: 60px;
+    text-align: center;
+    color:white
+}
+.get{
+    margin-left: 350px;
+    margin-top: 10px;
+    width: 600px;
+    height: 70px;
+    background-color: #faebd7;
+    border-radius: 6px;
+}
+
+.inp{
+    width: 450px;
+    height: 30px;
+    border-radius: 2px;
+    margin-top: 15px;
+    margin-left: 30px;
+    border-style: none;
+}
+#btn{
+    cursor: pointer;
+    background-color: blue;
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color:red;
+    border-style: none;
+}
+
+.food-list{
+    margin-left: 350px;
+    margin-top: 30px;
+    width: 600px;
+    background-color:rgb(164, 226, 195);
+    list-style: none;
+    line-height: 34px;
+}
+
+.items{
+    border-style: solid;
+    border-width: 1px;
+    border-color:white;
+    color:grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items:hover{
+    background-color: blue;
+    color: red;
+    font-weight: bold;
+}
+
+.cancel-btn{
+    cursor: pointer;
+    border-style: none;
+    background-color:rgb(164, 226, 195);
+    border-radius: 30px;
+}
+
+.cancel-btn:hover{
+    background-color: red;
+}
+
+.edit-content{
+    cursor: pointer;
+    position: absolute;
+    left: 870px;
+    justify-content: center;    
+    margin-top: 6px;
+    background-color:rgb(235, 192, 204);
+    border-color: rgb(164, 226, 195);
+}
+
+.editingbts{
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 4px;
+    border-radius:8px;
+}
+.editingbts:hover{
+    background-color: rgba(17, 6, 6, 0.658);
+}
+
+.form{
+    margin-left: 350px;
+    margin-top: 10px;
+    width: 600px;
+    background-color: antiquewhite;
+    border-radius: 6px;
+}
+
+.input{
+    margin-top: 20px;
+    margin-left: 190px;
+    width: 230px;
+    height: 27px;
+    border-style: none;
+}
+
+.agreement{
+   position: relative;
+   margin-top: 15px;
+   margin-left: 170px;
+}
+
+.submit{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 240px;
+    background-color: blue;
+    border-style: none;
+    border-radius: 8px;
+    width: 70px;
+    height: 20px;
+    color:white;
+    cursor: pointer;
+}
+
+.header h2 span a{
+    color: rgba(8, 247, 48, 0.808);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header h2 span a:hover{
+    color:brown;
+    background-color: rgb(222, 231, 230);
+    border-radius: 9px;    
+}
+
+
+.showbtn, .ok{
+    color: red;
+    cursor: pointer;
+    background-color: rgba(231, 229, 238, 0.212);
+}
+
+form{    
+    background-color: rgb(182, 236, 198);
+    width: 700px;
+    margin-top: 35px;
+    margin-left: 350px;
+    border-radius: 10px;
+}
+
+.heading{
+    margin-top: 80px;
+    margin-left: 600px;
+}
+.inpfeedback{
+    margin-top: 20px;
+    margin-left: 30px; 
+    width: 600px;
+    height: 30px;
+    border-style: none;
+    border-radius: 7px;
+}
+.Feedbackradion{    
+    display: inline;
+    margin-left: 30px;
+}
+
+textarea{
+   margin-top: 20px;
+   margin-left: 30px; 
+   width: 600px;
+   height: 90px;
+   border-radius: 8px;
+   border-style: none;
+}
+
+.form-submit{
+    width: 60px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(50, 13, 214);
+    color:white;
+    cursor: pointer;
+}
+
+.feedback{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    font-style: bold;
+    margin-top: 30px;
+    margin-left: 350px;
+    border-radius: 5px;
+    background-color: rgb(158, 206, 149);
+}
+
+.feedback:hover{
+    background-color: grey;
+}

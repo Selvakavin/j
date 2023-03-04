@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodCook Planner</title>
+    <link rel="stylesheet" href="dom.css">
+    
+</head>
+<body>
+    <div class="header">
+        <h2>FoodCook Planner💖  <span><a href="aboutus.html">Credits</a></span></h2>
+    </div>
+    <div class="get">
+        <input type="text" class="inp" placeholder="Enter here...">
+        <button id="btn" >Save</button>
+    </div>
+    <div class="food-list" id="food-items">
+        <li class="items">
+           <div>Sambar</div> 
+           <button class="edit-content" onclick="editcontent(event)">Edit</button>
+           <button class="cancel-btn" onclick="cancelbtn(event)">X</button>
+        </li>
+        <li class="items">
+            <div>Parotta</div>
+            <button class="edit-content" onclick="editcontent(event)">Edit</button>
+            <button class="cancel-btn" onclick="cancelbtn(event)">X</button>
+        </li>
+        <li class="items">
+            <div>Kothu Parotta</div>
+            <button class="edit-content" onclick="editcontent(event)">Edit</button>
+            <button class="cancel-btn" onclick="cancelbtn(event)">X</button>
+        </li>
+        <li class="items">
+            <div>Chilli Parotta</div> 
+            <button class="edit-content" onclick="editcontent(event)">Edit</button>
+            <button class="cancel-btn" onclick="cancelbtn(event)">X</button>
+        </li>
+    </div>
+    <div>
+        <a href="feedback.html" class="feedback">Feedback</a>
+    </div>
+<!--
+    <div>
+        <form  class="form">
+            <div>
+                <input type="text" placeholder="Enter name here.." class="input">
+            </div>
+            <div class="agreement">
+                <lable for="terms">
+                    <input type="checkbox" class="checkbox">
+                    <span >I accept the </span>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" onclick="return false">terms and conditions</a>
+                </lable>
+            </div>
+            <div>
+                <button class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+-->
+   
+
+</body>
+<script src="dom.js"></script>
+</html>

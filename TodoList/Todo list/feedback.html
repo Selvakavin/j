@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css">
+    
+</head>
+<body>
+    <div class="header" >
+        <h2>FoodCook Planner💖  <span><a href="dom.html">Home</a></span></h2>
+    </div>
+    <div><h3 class="heading">Feedback Form</h3></div>
+    <form class="feedbackfrom">
+        <div>
+            <input placeholder="Enter fullname.." class="inpfeedback" type="name" name="fullname" required>
+        </div>
+        <div>
+            <input placeholder="Enter email.." class="inpfeedback" type="email" name="email" required>
+        </div>
+        <div class="Feedbackradion">
+            <input id="General-feedback" type="radio" class="typesOfFeedback"  name="radio">
+            <label for="General-feedback">General Feedback</label>           
+        </div>
+        <div class="Feedbackradion">
+            <input id="Technical-feedback" type="radio" class="typesOfFeedback" name="radio">
+            <label for="Technical-feedback">Technical Feedback</label>           
+        </div>  
+        <div class="Feedbackradion">
+            <input id="Contribution-feedback" type="radio" class="typesOfFeedback" name="radio">
+            <label for="Contribution-feedback">Contribution Feedback</label>           
+        </div>   
+        <div>
+            <textarea placeholder="describe your feedback briefly.." required></textarea>
+        </div>   
+        <div>
+            <button class="form-submit">Submit</button>
+        </div>  
+    </form>
+
+</body>
+<script src="feedback.js"></script>
+</html>
