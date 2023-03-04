@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/22987bb49a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="chess.css" rel="stylesheet">
+    <title>Chess</title>
+</head>
+<body>
+    
+    <!--
+    <div id="a">b</div>
+    <div id="b">w</div>
+    <input onclick="fu()" type="number">    
+
+    <button id="start" value="black">Start</button>
+
+    -->
+    
+
+    <div class="chess">
+        <hp id="note"></hp>
+        <h2 id="warning"></h2>
+        <h3 id="turn" style="text-align:center ;color: red;"></h3>
+        <h4 id="touch"></h4><span id="touchpiece"></span>
+        <button id="start" onclick="assignicons()" type="button" class="btn btn-success">Start</button>
+        <button id="stop" onclick="stopgame()" type="button" class="btn btn-danger">Finish</button>
+        <h4 id="headletter">ABCDEFGH</h4>
+        <div class="box">
+            8<button ondblclick="Move('A8')" id="A8" value=""></button>
+            <button ondblclick="Move('B8')" id="B8" value=""></button>
+            <button ondblclick="Move('C8')" id="C8" value=""></button>
+            <button ondblclick="Move('D8')" id="D8" value=""></button>
+            <button ondblclick="Move('E8')" id="E8" value=""></button>
+            <button ondblclick="Move('F8')" id="F8" value=""></button>
+            <button ondblclick="Move('G8')" id="G8" value=""></button>
+            <button ondblclick="Move('H8')" id="H8" value=""></button>
+            7<button ondblclick="Move('A7')" id="A7" value=""></button>
+            <button ondblclick="Move('B7')" id="B7" value=""></button>
+            <button ondblclick="Move('C7')" id="C7" value=""></button>
+            <button ondblclick="Move('D7')" id="D7" value=""></button>
+            <button ondblclick="Move('E7')" id="E7" value=""></button>
+            <button ondblclick="Move('F7')" id="F7" value=""></button>
+            <button ondblclick="Move('G7')" id="G7" value=""></button>
+            <button ondblclick="Move('H7')" id="H7" value=""></button>
+            6<button ondblclick="Move('A6')" id="A6" value=""></button>
+            <button ondblclick="Move('B6')" id="B6" value=""></button>
+            <button ondblclick="Move('C6')" id="C6" value=""></button>
+            <button ondblclick="Move('D6')" id="D6" value=""></button>
+            <button ondblclick="Move('E6')" id="E6" value=""></button>
+            <button ondblclick="Move('F6')" id="F6" value=""></button>
+            <button ondblclick="Move('G6')" id="G6" value=""></button>
+            <button ondblclick="Move('H6')" id="H6" value=""></button>
+            5<button ondblclick="Move('A5')" id="A5" value=""></button>
+            <button ondblclick="Move('B5')" id="B5" value=""></button>
+            <button ondblclick="Move('C5')" id="C5" value=""></button>
+            <button ondblclick="Move('D5')" id="D5" value=""></button>
+            <button ondblclick="Move('E5')" id="E5" value=""></button>
+            <button ondblclick="Move('F5')" id="F5" value=""></button>
+            <button ondblclick="Move('G5')" id="G5" value=""></button>
+            <button ondblclick="Move('H5')" id="H5" value=""></button>
+            4<button ondblclick="Move('A4')" id="A4" value=""></button>
+            <button ondblclick="Move('B4')" id="B4" value=""></button>
+            <button ondblclick="Move('C4')" id="C4" value=""></button>
+            <button ondblclick="Move('D4')" id="D4" value=""></button>
+            <button ondblclick="Move('E4')" id="E4" value=""></button>
+            <button ondblclick="Move('F4')" id="F4" value=""></button>
+            <button ondblclick="Move('G4')" id="G4" value=""></button>
+            <button ondblclick="Move('H4')" id="H4" value=""></button>
+            3<button ondblclick="Move('A3')" id="A3" value=""></button>
+            <button ondblclick="Move('B3')" id="B3" value=""></button>
+            <button ondblclick="Move('C3')" id="C3" value=""></button>
+            <button ondblclick="Move('D3')" id="D3" value=""></button>
+            <button ondblclick="Move('E3')" id="E3" value=""></button>
+            <button ondblclick="Move('F3')" id="F3" value=""></button>
+            <button ondblclick="Move('G3')" id="G3" value=""></button>
+            <button ondblclick="Move('H3')" id="H3" value=""></button>
+            2<button ondblclick="Move('A2')" id="A2" value=""></button>
+            <button ondblclick="Move('B2')" id="B2" value=""></button>
+            <button ondblclick="Move('C2')" id="C2" value=""></button>
+            <button ondblclick="Move('D2')" id="D2" value=""></button>
+            <button ondblclick="Move('E2')" id="E2" value=""></button>
+            <button ondblclick="Move('F2')" id="F2" value=""></button>
+            <button ondblclick="Move('G2')" id="G2" value=""></button>
+            <button ondblclick="Move('H2')" id="H2" value=""></button>
+            1<button ondblclick="Move('A1')" id="A1" value=""></button>
+            <button ondblclick="Move('B1')" id="B1" value=""></button>
+            <button ondblclick="Move('C1')" id="C1" value=""></button>
+            <button ondblclick="Move('D1')" id="D1" value=""></button>
+            <button ondblclick="Move('E1')" id="E1" value=""></button>
+            <button ondblclick="Move('F1')" id="F1" value=""></button>
+            <button ondblclick="Move('G1')" id="G1" value=""></button>
+            <button ondblclick="Move('H1')" id="H1" value=""></button>
+
+        </div>
+        <div class="attack">
+            <div id="brownattack"></div>
+            <div id="blueattack"></div>
+        </div>
+        <h4 id="footletter">ABCDEFGH</h4>
+    </div>
+
+</body>
+<script src="chess.js"></script>
+</html>
